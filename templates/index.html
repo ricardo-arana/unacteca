@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{titulo}}{% endblock %} 
+{% block contenido %}
+	
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 ">
+  <div class="page-header">
+  <h1>Biblioteca Especilizada </h1>
+</div>
+	<form action="/biblioteca/buscar/" method="get" >
+  	<div class="input-group">
+      <input name="rq" type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit" type="button">Buscar</button>
+      </span>
+    </div><!-- /input-group -->
+    <p align="right"><small><a href="#">Búsqueda Avanzada</a></small></p>
+
+
+  </div>
+</div>
+</form>
+      
+
+{% endblock %}
+
+
