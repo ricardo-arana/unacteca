@@ -9,7 +9,12 @@
 </div>
 	
 	<div class="row">
-  <div class="col-md-4"><img src="{{object.portada.url_250x300}}" alt="..." class="img-rounded" id="zoom_05" data-zoom-image="large/image1.jpg"></div>
+  <div class="col-md-4">
+  <p align="center"> <img src="{{object.portada.url_250x300}}" alt="..." class="img-rounded" id="zoom_05" data-zoom-image="large/image1.jpg"></p>
+ 
+  <p align="center"><button type="button" class="btn btn-success">Solicitar Ejemplar</button></p>
+    
+  </div>
   <div class="col-md-8">
 
 <div class="panel panel-default">
@@ -25,13 +30,17 @@
     <li class="list-group-item"><b>Editorial: </b>{{object.editorial}}</li>
     <li class="list-group-item"><b>Materia: </b>{{object.materia}}</li>
     <li class="list-group-item"><b>Idioma: </b>{{object.idioma}}</li>
+    <li class="list-group-item"><b>Ejemplares Disponibles: </b>
+
+{{disponibles}}
+   </li>
     <li class="list-group-item"><b>Etiquetas: </b>
     {% for eti in object.etiqueta.all %}
     <span class="label label-primary">{{eti}}</span>
     {% endfor %}
 
     </li>
-    <li class="list-group-item"><button type="button" class="btn btn-success">Solicitar Ejemplar</button></li>
+    
   </ul>
 </div>
 

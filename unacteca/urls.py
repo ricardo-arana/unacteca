@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^login/$', 'biblioteca.views.login', name='login'),
 	url(r'^deuda/$', 'biblioteca.views.buscar_deuda', name='buscar_deuda'),
     url(r'^biblioteca/', include('biblioteca.urls')),
+    url(r'^usuario/nuevo$','biblioteca.views.nuevo_usuario'),
 
 
     url(r'^admin/', include(admin.site.urls)),

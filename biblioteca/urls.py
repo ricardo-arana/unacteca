@@ -6,4 +6,5 @@ urlpatterns = patterns('',
 
     url(r'^buscar/$', views.buscar, name='buscar'),
     url(r'^detalle/(?P<slug>[-\w]+)/$', views.detalle.as_view()),
+
 )
